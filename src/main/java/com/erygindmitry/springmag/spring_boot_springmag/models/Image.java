@@ -12,22 +12,22 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Images {
+public class Image {
 //Создание полей для базы данных в которой будут храниться картинки
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+
     private Long id;
-    @Column(name = "name")
+
     private String name;
-    @Column(name = "originalFileName")
+
     private String originalFileName;
-    @Column(name = "size")
+
     private Long size;
-    @Column(name = "contentType")
+
     private String contentType;
-    @Column(name = "isPreviewImage")
+
     private boolean isPreviewImage;
     @Lob
     private byte[] bytes;
